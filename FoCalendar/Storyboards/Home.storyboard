@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Ae-Is-WNw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="eeE-Fe-qNT">
+            <objects>
+                <viewController id="a2j-wZ-sN4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ada-ze-zRo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="z9d-mi-NmN"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="tXk-Hv-Pz3">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="play" id="cqs-wX-oTA">
+                            <connections>
+                                <segue destination="M2t-8e-qvO" kind="show" identifier="focusSegue" id="9im-lP-WQM"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="8Ft-Zu-0Wu">
+                            <connections>
+                                <segue destination="dGU-8U-0Sc" kind="show" identifier="addEventSegue" id="q0i-Pw-Oxx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZJf-bI-sfy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="955.07246376811599" y="99.776785714285708"/>
+        </scene>
+        <!--New Event-->
+        <scene sceneID="LZr-CA-mDk">
+            <objects>
+                <viewController id="dGU-8U-0Sc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s31-hC-BEh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vJc-wO-9rq"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Event" id="RZ5-A5-XlB">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="jZt-4R-USk"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rac-j5-rsP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1927" y="436"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Wv8-6v-BOJ">
+            <objects>
+                <viewController id="M2t-8e-qvO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yjk-3L-cXu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="dFZ-Bc-wPu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AqJ-kL-Vic"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qhN-9g-r1g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1914" y="-251"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="DKh-ME-PtP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Ae-Is-WNw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="avr-sB-2EN"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b6i-Tk-vp1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="a2j-wZ-sN4" kind="relationship" relationship="rootViewController" id="LWI-0w-dSj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uXz-Ip-77r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Home" width="24" height="24"/>
+    </resources>
+</document>

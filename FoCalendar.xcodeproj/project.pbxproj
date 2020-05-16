@@ -14,6 +14,14 @@
 		49C042F3246D145900E0A056 /* FoCalendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49C042F1246D145900E0A056 /* FoCalendar.xcdatamodeld */; };
 		49C042F5246D145A00E0A056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C042F4246D145A00E0A056 /* Assets.xcassets */; };
 		49C042F8246D145A00E0A056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C042F6246D145A00E0A056 /* LaunchScreen.storyboard */; };
+		49C04343246EEBA700E0A056 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C04342246EEBA700E0A056 /* Home.storyboard */; };
+		49C04347246EEBCA00E0A056 /* Weekly.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C04346246EEBCA00E0A056 /* Weekly.storyboard */; };
+		49C04349246EEBDA00E0A056 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C04348246EEBDA00E0A056 /* Report.storyboard */; };
+		49C0434B246EEBF400E0A056 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C0434A246EEBF400E0A056 /* Settings.storyboard */; };
+		49C0434F246F8C0000E0A056 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C0434E246F8C0000E0A056 /* ResetPasswordViewController.swift */; };
+		49C04351246F8CAE00E0A056 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C04350246F8CAE00E0A056 /* SignViewController.swift */; };
+		49C04353246F901800E0A056 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C04352246F901800E0A056 /* SignUpViewController.swift */; };
+		49C04355246F934500E0A056 /* FocusLengthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C04354246F934500E0A056 /* FocusLengthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		49C042F4246D145A00E0A056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49C042F7246D145A00E0A056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49C042F9246D145A00E0A056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49C04342246EEBA700E0A056 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		49C04346246EEBCA00E0A056 /* Weekly.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Weekly.storyboard; sourceTree = "<group>"; };
+		49C04348246EEBDA00E0A056 /* Report.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
+		49C0434A246EEBF400E0A056 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		49C0434E246F8C0000E0A056 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		49C04350246F8CAE00E0A056 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		49C04352246F901800E0A056 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		49C04354246F934500E0A056 /* FocusLengthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusLengthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +74,32 @@
 		49C042E7246D145900E0A056 /* FoCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				49C0433F246EEB2900E0A056 /* Storyboards */,
 				49C042E8246D145900E0A056 /* AppDelegate.swift */,
 				49C042EA246D145900E0A056 /* SceneDelegate.swift */,
 				49C042EC246D145900E0A056 /* ViewController.swift */,
-				49C042EE246D145900E0A056 /* Main.storyboard */,
 				49C042F4246D145A00E0A056 /* Assets.xcassets */,
 				49C042F6246D145A00E0A056 /* LaunchScreen.storyboard */,
 				49C042F9246D145A00E0A056 /* Info.plist */,
 				49C042F1246D145900E0A056 /* FoCalendar.xcdatamodeld */,
+				49C0434E246F8C0000E0A056 /* ResetPasswordViewController.swift */,
+				49C04350246F8CAE00E0A056 /* SignViewController.swift */,
+				49C04352246F901800E0A056 /* SignUpViewController.swift */,
+				49C04354246F934500E0A056 /* FocusLengthViewController.swift */,
 			);
 			path = FoCalendar;
+			sourceTree = "<group>";
+		};
+		49C0433F246EEB2900E0A056 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				49C042EE246D145900E0A056 /* Main.storyboard */,
+				49C04342246EEBA700E0A056 /* Home.storyboard */,
+				49C04346246EEBCA00E0A056 /* Weekly.storyboard */,
+				49C04348246EEBDA00E0A056 /* Report.storyboard */,
+				49C0434A246EEBF400E0A056 /* Settings.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +162,11 @@
 			files = (
 				49C042F8246D145A00E0A056 /* LaunchScreen.storyboard in Resources */,
 				49C042F5246D145A00E0A056 /* Assets.xcassets in Resources */,
+				49C04349246EEBDA00E0A056 /* Report.storyboard in Resources */,
+				49C04347246EEBCA00E0A056 /* Weekly.storyboard in Resources */,
 				49C042F0246D145900E0A056 /* Main.storyboard in Resources */,
+				49C04343246EEBA700E0A056 /* Home.storyboard in Resources */,
+				49C0434B246EEBF400E0A056 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C04351246F8CAE00E0A056 /* SignViewController.swift in Sources */,
+				49C04353246F901800E0A056 /* SignUpViewController.swift in Sources */,
 				49C042ED246D145900E0A056 /* ViewController.swift in Sources */,
+				49C04355246F934500E0A056 /* FocusLengthViewController.swift in Sources */,
 				49C042E9246D145900E0A056 /* AppDelegate.swift in Sources */,
+				49C0434F246F8C0000E0A056 /* ResetPasswordViewController.swift in Sources */,
 				49C042F3246D145900E0A056 /* FoCalendar.xcdatamodeld in Sources */,
 				49C042EB246D145900E0A056 /* SceneDelegate.swift in Sources */,
 			);
@@ -298,7 +338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Monash.FoCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,7 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Monash.FoCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

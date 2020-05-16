@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DHw-3l-rr2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Report-->
+        <scene sceneID="vus-Mk-AMm">
+            <objects>
+                <viewController id="cO1-eb-zfQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fpp-4s-avz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vw4-NL-ds2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Report" id="uco-Ob-gHB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gMC-Pn-IKk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1131.8840579710145" y="-224.33035714285714"/>
+        </scene>
+        <!--Report-->
+        <scene sceneID="gIc-3R-SEp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DHw-3l-rr2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Report" image="Report" id="q2a-xP-fX9"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hyn-18-5pB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cO1-eb-zfQ" kind="relationship" relationship="rootViewController" id="Lir-Kn-eoO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Af-yn-JIe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221.73913043478262" y="-224.33035714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Report" width="24" height="24"/>
+    </resources>
+</document>
