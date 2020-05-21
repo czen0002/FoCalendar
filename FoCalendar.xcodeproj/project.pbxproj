@@ -3,10 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492D5CF22471A570009564F1 /* FocusChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D5CF12471A570009564F1 /* FocusChartViewController.swift */; };
+		492D5CF42471A58E009564F1 /* EventsChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D5CF32471A58E009564F1 /* EventsChartViewController.swift */; };
+		49A2F9372470373800966EB0 /* WeekStartsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2F9362470373800966EB0 /* WeekStartsTableViewController.swift */; };
+		49A2F93B2470402B00966EB0 /* DayStartsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2F93A2470402B00966EB0 /* DayStartsTableViewController.swift */; };
+		49A2F93D247040CE00966EB0 /* DayEndsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2F93C247040CE00966EB0 /* DayEndsTableViewController.swift */; };
+		49A2F93F2470422100966EB0 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2F93E2470422100966EB0 /* SettingsTableViewController.swift */; };
+		49A2F9412471161300966EB0 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2F9402471161300966EB0 /* ReportViewController.swift */; };
+		49A2F94D24718B3800966EB0 /* FocusSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2F94C24718B3800966EB0 /* FocusSummaryViewController.swift */; };
+		49A2F94F24718B4B00966EB0 /* DistributionSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2F94E24718B4B00966EB0 /* DistributionSummaryViewController.swift */; };
+		49B53A902472CEF800EC4C5B /* FocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B53A8F2472CEF800EC4C5B /* FocusViewController.swift */; };
 		49C042E9246D145900E0A056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C042E8246D145900E0A056 /* AppDelegate.swift */; };
 		49C042EB246D145900E0A056 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C042EA246D145900E0A056 /* SceneDelegate.swift */; };
 		49C042ED246D145900E0A056 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C042EC246D145900E0A056 /* ViewController.swift */; };
@@ -15,16 +25,44 @@
 		49C042F5246D145A00E0A056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C042F4246D145A00E0A056 /* Assets.xcassets */; };
 		49C042F8246D145A00E0A056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C042F6246D145A00E0A056 /* LaunchScreen.storyboard */; };
 		49C04343246EEBA700E0A056 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C04342246EEBA700E0A056 /* Home.storyboard */; };
-		49C04347246EEBCA00E0A056 /* Weekly.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C04346246EEBCA00E0A056 /* Weekly.storyboard */; };
 		49C04349246EEBDA00E0A056 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C04348246EEBDA00E0A056 /* Report.storyboard */; };
 		49C0434B246EEBF400E0A056 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C0434A246EEBF400E0A056 /* Settings.storyboard */; };
 		49C0434F246F8C0000E0A056 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C0434E246F8C0000E0A056 /* ResetPasswordViewController.swift */; };
 		49C04351246F8CAE00E0A056 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C04350246F8CAE00E0A056 /* SignViewController.swift */; };
 		49C04353246F901800E0A056 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C04352246F901800E0A056 /* SignUpViewController.swift */; };
 		49C04355246F934500E0A056 /* FocusLengthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C04354246F934500E0A056 /* FocusLengthViewController.swift */; };
+		49F4F7AE247410C600DB6CF3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4F7AD247410C600DB6CF3 /* HomeViewController.swift */; };
+		49F4F7B2247418FC00DB6CF3 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F4F7B1247418FC00DB6CF3 /* Events.storyboard */; };
+		49F4F7B424741B9400DB6CF3 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4F7B324741B9400DB6CF3 /* EventsTableViewController.swift */; };
+		49F4F7D4247436C600DB6CF3 /* MulticastDelegate..swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4F7D3247436C600DB6CF3 /* MulticastDelegate..swift */; };
+		49F4F7D62474370E00DB6CF3 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4F7D52474370E00DB6CF3 /* CoreDataController.swift */; };
+		49F4F7D82474373100DB6CF3 /* DatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4F7D72474373100DB6CF3 /* DatabaseProtocol.swift */; };
+		49F4F7EB2474424400DB6CF3 /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4F7E52474424400DB6CF3 /* Event+CoreDataClass.swift */; };
+		49F4F7EC2474424400DB6CF3 /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4F7E62474424400DB6CF3 /* Event+CoreDataProperties.swift */; };
+		49F4F7ED2474424400DB6CF3 /* Color+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4F7E72474424400DB6CF3 /* Color+CoreDataClass.swift */; };
+		49F4F7EE2474424400DB6CF3 /* Color+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4F7E82474424400DB6CF3 /* Color+CoreDataProperties.swift */; };
+		49F4F7EF2474424400DB6CF3 /* Tag+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4F7E92474424400DB6CF3 /* Tag+CoreDataClass.swift */; };
+		49F4F7F02474424400DB6CF3 /* Tag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4F7EA2474424400DB6CF3 /* Tag+CoreDataProperties.swift */; };
+		49F4F7F22474537800DB6CF3 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4F7F12474537800DB6CF3 /* EventTableViewCell.swift */; };
+		49F4F7F62475945A00DB6CF3 /* EventDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4F7F52475945A00DB6CF3 /* EventDetailTableViewController.swift */; };
+		49F4F7F8247620D500DB6CF3 /* NewEvent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F4F7F7247620D500DB6CF3 /* NewEvent.storyboard */; };
+		49F4F7FA2476219300DB6CF3 /* NewEventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4F7F92476219300DB6CF3 /* NewEventTableViewController.swift */; };
+		925732AEFDC3436F4098A02E /* Pods_FoCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2055502D522116EBD12499 /* Pods_FoCalendar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F2055502D522116EBD12499 /* Pods_FoCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4D966128C4A995E20A9125 /* Pods-FoCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoCalendar.debug.xcconfig"; path = "Target Support Files/Pods-FoCalendar/Pods-FoCalendar.debug.xcconfig"; sourceTree = "<group>"; };
+		492D5CF12471A570009564F1 /* FocusChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusChartViewController.swift; sourceTree = "<group>"; };
+		492D5CF32471A58E009564F1 /* EventsChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsChartViewController.swift; sourceTree = "<group>"; };
+		49A2F9362470373800966EB0 /* WeekStartsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekStartsTableViewController.swift; sourceTree = "<group>"; };
+		49A2F93A2470402B00966EB0 /* DayStartsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayStartsTableViewController.swift; sourceTree = "<group>"; };
+		49A2F93C247040CE00966EB0 /* DayEndsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayEndsTableViewController.swift; sourceTree = "<group>"; };
+		49A2F93E2470422100966EB0 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		49A2F9402471161300966EB0 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		49A2F94C24718B3800966EB0 /* FocusSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSummaryViewController.swift; sourceTree = "<group>"; };
+		49A2F94E24718B4B00966EB0 /* DistributionSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributionSummaryViewController.swift; sourceTree = "<group>"; };
+		49B53A8F2472CEF800EC4C5B /* FocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusViewController.swift; sourceTree = "<group>"; };
 		49C042E5246D145900E0A056 /* FoCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C042E8246D145900E0A056 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49C042EA246D145900E0A056 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,13 +73,29 @@
 		49C042F7246D145A00E0A056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49C042F9246D145A00E0A056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49C04342246EEBA700E0A056 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		49C04346246EEBCA00E0A056 /* Weekly.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Weekly.storyboard; sourceTree = "<group>"; };
 		49C04348246EEBDA00E0A056 /* Report.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
 		49C0434A246EEBF400E0A056 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		49C0434E246F8C0000E0A056 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		49C04350246F8CAE00E0A056 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		49C04352246F901800E0A056 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		49C04354246F934500E0A056 /* FocusLengthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusLengthViewController.swift; sourceTree = "<group>"; };
+		49F4F7AD247410C600DB6CF3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		49F4F7B1247418FC00DB6CF3 /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
+		49F4F7B324741B9400DB6CF3 /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		49F4F7D3247436C600DB6CF3 /* MulticastDelegate..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate..swift; sourceTree = "<group>"; };
+		49F4F7D52474370E00DB6CF3 /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+		49F4F7D72474373100DB6CF3 /* DatabaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProtocol.swift; sourceTree = "<group>"; };
+		49F4F7E52474424400DB6CF3 /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		49F4F7E62474424400DB6CF3 /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		49F4F7E72474424400DB6CF3 /* Color+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		49F4F7E82474424400DB6CF3 /* Color+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		49F4F7E92474424400DB6CF3 /* Tag+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		49F4F7EA2474424400DB6CF3 /* Tag+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		49F4F7F12474537800DB6CF3 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		49F4F7F52475945A00DB6CF3 /* EventDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailTableViewController.swift; sourceTree = "<group>"; };
+		49F4F7F7247620D500DB6CF3 /* NewEvent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewEvent.storyboard; sourceTree = "<group>"; };
+		49F4F7F92476219300DB6CF3 /* NewEventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventTableViewController.swift; sourceTree = "<group>"; };
+		A0DE138FD9707F9D35801793 /* Pods-FoCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoCalendar.release.xcconfig"; path = "Target Support Files/Pods-FoCalendar/Pods-FoCalendar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +103,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				925732AEFDC3436F4098A02E /* Pods_FoCalendar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32412FB6BFE9A27641B1A205 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F2055502D522116EBD12499 /* Pods_FoCalendar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		49C042DC246D145900E0A056 = {
 			isa = PBXGroup;
 			children = (
 				49C042E7246D145900E0A056 /* FoCalendar */,
 				49C042E6246D145900E0A056 /* Products */,
+				54162C1B8F85F188ED8DA7A3 /* Pods */,
+				32412FB6BFE9A27641B1A205 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +139,8 @@
 		49C042E7246D145900E0A056 /* FoCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				49F4F7D22474368900DB6CF3 /* Database */,
+				49F4F7B5247421C600DB6CF3 /* DataModel */,
 				49C0433F246EEB2900E0A056 /* Storyboards */,
 				49C042E8246D145900E0A056 /* AppDelegate.swift */,
 				49C042EA246D145900E0A056 /* SceneDelegate.swift */,
@@ -81,11 +148,25 @@
 				49C042F4246D145A00E0A056 /* Assets.xcassets */,
 				49C042F6246D145A00E0A056 /* LaunchScreen.storyboard */,
 				49C042F9246D145A00E0A056 /* Info.plist */,
-				49C042F1246D145900E0A056 /* FoCalendar.xcdatamodeld */,
 				49C0434E246F8C0000E0A056 /* ResetPasswordViewController.swift */,
 				49C04350246F8CAE00E0A056 /* SignViewController.swift */,
 				49C04352246F901800E0A056 /* SignUpViewController.swift */,
 				49C04354246F934500E0A056 /* FocusLengthViewController.swift */,
+				49A2F9362470373800966EB0 /* WeekStartsTableViewController.swift */,
+				49A2F93A2470402B00966EB0 /* DayStartsTableViewController.swift */,
+				49A2F93C247040CE00966EB0 /* DayEndsTableViewController.swift */,
+				49A2F93E2470422100966EB0 /* SettingsTableViewController.swift */,
+				49A2F9402471161300966EB0 /* ReportViewController.swift */,
+				49A2F94C24718B3800966EB0 /* FocusSummaryViewController.swift */,
+				49A2F94E24718B4B00966EB0 /* DistributionSummaryViewController.swift */,
+				492D5CF12471A570009564F1 /* FocusChartViewController.swift */,
+				492D5CF32471A58E009564F1 /* EventsChartViewController.swift */,
+				49B53A8F2472CEF800EC4C5B /* FocusViewController.swift */,
+				49F4F7AD247410C600DB6CF3 /* HomeViewController.swift */,
+				49F4F7B324741B9400DB6CF3 /* EventsTableViewController.swift */,
+				49F4F7F12474537800DB6CF3 /* EventTableViewCell.swift */,
+				49F4F7F52475945A00DB6CF3 /* EventDetailTableViewController.swift */,
+				49F4F7F92476219300DB6CF3 /* NewEventTableViewController.swift */,
 			);
 			path = FoCalendar;
 			sourceTree = "<group>";
@@ -95,11 +176,45 @@
 			children = (
 				49C042EE246D145900E0A056 /* Main.storyboard */,
 				49C04342246EEBA700E0A056 /* Home.storyboard */,
-				49C04346246EEBCA00E0A056 /* Weekly.storyboard */,
+				49F4F7B1247418FC00DB6CF3 /* Events.storyboard */,
 				49C04348246EEBDA00E0A056 /* Report.storyboard */,
 				49C0434A246EEBF400E0A056 /* Settings.storyboard */,
+				49F4F7F7247620D500DB6CF3 /* NewEvent.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		49F4F7B5247421C600DB6CF3 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				49F4F7E52474424400DB6CF3 /* Event+CoreDataClass.swift */,
+				49F4F7E62474424400DB6CF3 /* Event+CoreDataProperties.swift */,
+				49F4F7E72474424400DB6CF3 /* Color+CoreDataClass.swift */,
+				49F4F7E82474424400DB6CF3 /* Color+CoreDataProperties.swift */,
+				49F4F7E92474424400DB6CF3 /* Tag+CoreDataClass.swift */,
+				49F4F7EA2474424400DB6CF3 /* Tag+CoreDataProperties.swift */,
+				49C042F1246D145900E0A056 /* FoCalendar.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		49F4F7D22474368900DB6CF3 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				49F4F7D3247436C600DB6CF3 /* MulticastDelegate..swift */,
+				49F4F7D52474370E00DB6CF3 /* CoreDataController.swift */,
+				49F4F7D72474373100DB6CF3 /* DatabaseProtocol.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		54162C1B8F85F188ED8DA7A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C4D966128C4A995E20A9125 /* Pods-FoCalendar.debug.xcconfig */,
+				A0DE138FD9707F9D35801793 /* Pods-FoCalendar.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49C042FC246D145A00E0A056 /* Build configuration list for PBXNativeTarget "FoCalendar" */;
 			buildPhases = (
+				254DA013254F310DC466204D /* [CP] Check Pods Manifest.lock */,
 				49C042E1246D145900E0A056 /* Sources */,
 				49C042E2246D145900E0A056 /* Frameworks */,
 				49C042E3246D145900E0A056 /* Resources */,
+				CC4619CD4536DDEB188DF6E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,28 +280,95 @@
 				49C042F8246D145A00E0A056 /* LaunchScreen.storyboard in Resources */,
 				49C042F5246D145A00E0A056 /* Assets.xcassets in Resources */,
 				49C04349246EEBDA00E0A056 /* Report.storyboard in Resources */,
-				49C04347246EEBCA00E0A056 /* Weekly.storyboard in Resources */,
 				49C042F0246D145900E0A056 /* Main.storyboard in Resources */,
+				49F4F7B2247418FC00DB6CF3 /* Events.storyboard in Resources */,
 				49C04343246EEBA700E0A056 /* Home.storyboard in Resources */,
+				49F4F7F8247620D500DB6CF3 /* NewEvent.storyboard in Resources */,
 				49C0434B246EEBF400E0A056 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		254DA013254F310DC466204D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoCalendar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC4619CD4536DDEB188DF6E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoCalendar/Pods-FoCalendar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoCalendar/Pods-FoCalendar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoCalendar/Pods-FoCalendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		49C042E1246D145900E0A056 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F4F7F62475945A00DB6CF3 /* EventDetailTableViewController.swift in Sources */,
+				49A2F94F24718B4B00966EB0 /* DistributionSummaryViewController.swift in Sources */,
 				49C04351246F8CAE00E0A056 /* SignViewController.swift in Sources */,
+				49F4F7AE247410C600DB6CF3 /* HomeViewController.swift in Sources */,
+				49F4F7F02474424400DB6CF3 /* Tag+CoreDataProperties.swift in Sources */,
+				49F4F7ED2474424400DB6CF3 /* Color+CoreDataClass.swift in Sources */,
+				49A2F9412471161300966EB0 /* ReportViewController.swift in Sources */,
 				49C04353246F901800E0A056 /* SignUpViewController.swift in Sources */,
+				49F4F7EF2474424400DB6CF3 /* Tag+CoreDataClass.swift in Sources */,
+				49F4F7EC2474424400DB6CF3 /* Event+CoreDataProperties.swift in Sources */,
 				49C042ED246D145900E0A056 /* ViewController.swift in Sources */,
+				49A2F9372470373800966EB0 /* WeekStartsTableViewController.swift in Sources */,
 				49C04355246F934500E0A056 /* FocusLengthViewController.swift in Sources */,
+				49F4F7FA2476219300DB6CF3 /* NewEventTableViewController.swift in Sources */,
+				49F4F7D62474370E00DB6CF3 /* CoreDataController.swift in Sources */,
+				49F4F7EE2474424400DB6CF3 /* Color+CoreDataProperties.swift in Sources */,
+				49B53A902472CEF800EC4C5B /* FocusViewController.swift in Sources */,
+				49F4F7EB2474424400DB6CF3 /* Event+CoreDataClass.swift in Sources */,
+				49A2F93D247040CE00966EB0 /* DayEndsTableViewController.swift in Sources */,
+				49F4F7D4247436C600DB6CF3 /* MulticastDelegate..swift in Sources */,
+				49F4F7F22474537800DB6CF3 /* EventTableViewCell.swift in Sources */,
 				49C042E9246D145900E0A056 /* AppDelegate.swift in Sources */,
+				49A2F94D24718B3800966EB0 /* FocusSummaryViewController.swift in Sources */,
+				492D5CF22471A570009564F1 /* FocusChartViewController.swift in Sources */,
 				49C0434F246F8C0000E0A056 /* ResetPasswordViewController.swift in Sources */,
+				49F4F7D82474373100DB6CF3 /* DatabaseProtocol.swift in Sources */,
+				49A2F93F2470422100966EB0 /* SettingsTableViewController.swift in Sources */,
 				49C042F3246D145900E0A056 /* FoCalendar.xcdatamodeld in Sources */,
 				49C042EB246D145900E0A056 /* SceneDelegate.swift in Sources */,
+				49A2F93B2470402B00966EB0 /* DayStartsTableViewController.swift in Sources */,
+				49F4F7B424741B9400DB6CF3 /* EventsTableViewController.swift in Sources */,
+				492D5CF42471A58E009564F1 /* EventsChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +510,7 @@
 		};
 		49C042FD246D145A00E0A056 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C4D966128C4A995E20A9125 /* Pods-FoCalendar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -344,6 +529,7 @@
 		};
 		49C042FE246D145A00E0A056 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0DE138FD9707F9D35801793 /* Pods-FoCalendar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

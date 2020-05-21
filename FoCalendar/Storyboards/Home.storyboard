@@ -10,7 +10,7 @@
         <!--Home-->
         <scene sceneID="eeE-Fe-qNT">
             <objects>
-                <viewController id="a2j-wZ-sN4" sceneMemberID="viewController">
+                <viewController id="a2j-wZ-sN4" customClass="HomeViewController" customModule="FoCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ada-ze-zRo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,7 +25,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="8Ft-Zu-0Wu">
                             <connections>
-                                <segue destination="dGU-8U-0Sc" kind="show" identifier="addEventSegue" id="q0i-Pw-Oxx"/>
+                                <segue destination="2kU-98-0YB" kind="show" id="H7l-Ql-R0k"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -34,32 +34,41 @@
             </objects>
             <point key="canvasLocation" x="955.07246376811599" y="99.776785714285708"/>
         </scene>
-        <!--New Event-->
-        <scene sceneID="LZr-CA-mDk">
+        <!--NewEvent-->
+        <scene sceneID="sdM-L8-e2R">
             <objects>
-                <viewController id="dGU-8U-0Sc" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="s31-hC-BEh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="vJc-wO-9rq"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="New Event" id="RZ5-A5-XlB">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="jZt-4R-USk"/>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rac-j5-rsP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="NewEvent" id="2kU-98-0YB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="u2G-HR-dmg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kpf-Tk-qmr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1927" y="436"/>
+            <point key="canvasLocation" x="1952" y="355"/>
         </scene>
-        <!--View Controller-->
+        <!--Focus View Controller-->
         <scene sceneID="Wv8-6v-BOJ">
             <objects>
-                <viewController id="M2t-8e-qvO" sceneMemberID="viewController">
+                <viewController id="M2t-8e-qvO" customClass="FocusViewController" customModule="FoCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yjk-3L-cXu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNn-86-X6X">
+                                <rect key="frame" x="15" y="55" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="LMn-H1-XMh"/>
+                                    <constraint firstAttribute="height" constant="24" id="ewK-Zw-DRJ"/>
+                                </constraints>
+                                <state key="normal" image="Back"/>
+                                <connections>
+                                    <action selector="backHome:" destination="M2t-8e-qvO" eventType="touchUpInside" id="LkU-BI-Fhf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mNn-86-X6X" firstAttribute="top" secondItem="Yjk-3L-cXu" secondAttribute="top" constant="55" id="NPT-xx-iLR"/>
+                            <constraint firstItem="mNn-86-X6X" firstAttribute="leading" secondItem="Yjk-3L-cXu" secondAttribute="leading" constant="15" id="pec-Bc-fFZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dFZ-Bc-wPu"/>
                     </view>
                     <navigationItem key="navigationItem" id="AqJ-kL-Vic"/>
@@ -90,6 +99,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Back" width="50" height="50"/>
         <image name="Home" width="24" height="24"/>
     </resources>
 </document>

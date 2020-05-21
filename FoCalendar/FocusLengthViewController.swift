@@ -13,6 +13,7 @@ class FocusLengthViewController: UIViewController, UIPickerViewDelegate, UIPicke
     @IBOutlet weak var timePicker: UIPickerView!
     
     var timeLength: Int?
+    var index: Int?
     var allTimeLength: [Int] = []
     
     override func viewDidLoad() {
@@ -26,8 +27,14 @@ class FocusLengthViewController: UIViewController, UIPickerViewDelegate, UIPicke
         self.timePicker.dataSource = self
         
         // Default picker data
-        timePicker.selectRow(0, inComponent: 0, animated: true)
-        timeLength = allTimeLength[0]
+        if let index = index {
+            timePicker.selectRow(index, inComponent: 0, animated: true)
+            timeLength = allTimeLength[index]
+        } else {
+            timePicker.selectRow(0, inComponent: 0, animated: true)
+            timeLength = allTimeLength[0]
+        }
+        
     }
     
     
@@ -63,6 +70,7 @@ class FocusLengthViewController: UIViewController, UIPickerViewDelegate, UIPicke
         timeLength = allTimeLength[row]
     }
     
+    // Generate picker data
     func generatePickerData() {
         var length = 10
         while length <= 180 {
@@ -70,6 +78,13 @@ class FocusLengthViewController: UIViewController, UIPickerViewDelegate, UIPicke
             length += 5
         }
     }
+    
+    
+    // MARK: - Button function
+    @IBAction func saveTimeLength(_ sender: Any) {
+//        print("\(timeLength)")
+    }
+    
 
     /*
     // MARK: - Navigation
